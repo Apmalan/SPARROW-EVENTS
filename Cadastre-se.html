@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400&display=swap" rel="stylesheet">
 
-    <title>Cadastra-se</title>
+    <title>Sparrow-events - cadastr-se</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
-        <a class="navbar-brand" href="Cadastre-se.html">Sparrow-Events</a>
+        <a class="navbar-brand" href="index.html">Sparrow events</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,11 +24,11 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="Cadastre-se.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Cadastre-se.html">Cadastra-se</a>
+                    <a class="nav-link" href="#">Cadastre-se</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -43,24 +43,26 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
     <div class="container">
+
         <div class="row">
             <div class="col-sm-12">
-                <h1>Seja bem-vindo!</h1>
+                <h1>Seja bem, vindo!</h1>
                 <p>Realize seu cadastro</p>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-11">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <div class="row">
@@ -69,30 +71,69 @@
                         </div>
                         <div class="col-sm-9">
                             <div class="form-group row">
-                                <label for="Nome" class="col-sm-2 col-form-label">Nome</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="Nome">
+                                <label for="nome" class="col-sm-3 col-form-label">Nome</label>
+
+                                <input type="text" class="form-control" id="nome">
+
+                            </div>
+                            <div class="form-group row">
+                                <label for="dataNascimento" class="col-sm-3 col-form-label">Data Nascimento</label>
+
+                                <input type="date" class="form-control" id="dataNascimento">
+
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-1">Sexo</label>
+
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">Feminino</label>
                                 </div>
-                                <div class="form-group row">
-                                        <label for="Data Nascimento" class="col-sm-2 col-form-label">Data Nascimento</label>
-                                        <div class="col-sm-10">
-                                            <input type="date" class="form-control" id="Data Nascimento">
-                                        </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio2">Masculino</label>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <label for="selectFormacao" class="col-sm-3 col-form-label">Formação</label>
+
+                                <select class="form-control" id="selectFormacao">
+                                    <option>Ensino Fundamental</option>
+                                    <option>Ensino Médio</option>
+                                    <option>Ensino Superior</option>
+                                </select>
+
+                                <label for="selectProfissao" class="col-sm-1 col-form-label">Profissao</label>
+                                 <select class="form-control" id="selectProfissao">
+                                    <option>Analista de Sistemas</option>
+                                    <option>Dev. Frontend</option>
+                                    <option>Dev. Backend</option>
+                                    <option>Dev. FullStack</option>
+                                </select>
+
                             </div>
 
+                            <div class="form-group row">
+                                <label for="cpf" class="col-sm-3 col-form-label">CPF</label>
+
+                                <input type="text" class="form-control" id="cpf">
+
+                            </div>
                         </div>
                     </div>
                 </fieldset>
             </div>
         </div>
-    </div>
 
-
+        <!--FIM DO CONTAINER-->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 </body>
 
