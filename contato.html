@@ -13,10 +13,11 @@
 
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
 
-    <title>PÁGINA PADRÃO</title>
+    <title>Contato</title>
 </head>
 
 <body class="d-flex flex-column h-100">
+    <!--#region BARRA DE NAVEGAÇÃO-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
         <a class="navbar-brand" href="index.html">Sparrow-Events</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -54,91 +55,85 @@
             </form>
         </div>
     </nav>
+    <!--#endregion-->
     <!-- Principal jumbotron, para a principal mensagem de marketing ou call to action -->
 
     <main role="main" class="flex-shrink-0 mb-5">
 
         <form>
             <div class="container">
-                    <h1>Fale conosco</h1><br>
+                <h1>Fale conosco</h1><br>
                 <div class="row">
                     <div class="col-sm-6">
-                            <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputCity">Nome</label>
-                                        <input type="text" class="form-control" id="inputCity">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputEmail4">Email</label>
-                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                    </div>
-            
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="inputAddress">Endereço</label>
-                                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-                                    </div>
-                                </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputCity">Nome</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputAddress">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress"
+                                    placeholder="Rua dos Bobos, nº 0">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputEstado">Estado</label>
+                                <select id="inputEstado" class="form-control">
+                                    <option selected>Espirito Santo</option>
+                                    <option selected>São Paulo</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="inputCEP">CEP</label>
+                                <input type="text" class="form-control" id="inputCEP" placeholder="29.900.000">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                            <iframe
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15051.565864504082!2d-40.05304674999999!3d-19.417094849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1570668107432!5m2!1spt-BR!2sbr"
                             width="500" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
                 </div>
-                <div class="form-row">
-                        <div class="form-group col-md-6">
-                            </div>
-                            </div>
-
-
-                
-                    
-                  
-
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">Cidade</label>
-                            <input type="text" class="form-control" id="inputCity">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputEstado">Estado</label>
-                            <select id="inputEstado" class="form-control">
-                                <option selected>Espirito Santo</option>
-                                <option selected>São Paulo</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputCEP">CEP</label>
-                            <input type="text" class="form-control" id="inputCEP" placeholder="29.900.000">
-                        </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Lembrar
+                        </label>
                     </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Clique em mim
-                            </label>
-                        </div>
-                    </div>
-                
+                </div>
+
 
                 <button type="submit" class="btn btn-primary">Enviar</button>
                 <button type="submit" class="btn btn-primary">Cancelar</button>
-                
+
         </form>
     </main>
+    <!--#region RODAPÉ DO SITE-->
     <footer class="footer mt-auto py-3">
         <div class="container">
-            <span class="text-muted">Coloque o conteúdo do sticky footer aqui.</span>
+            <span class="text-muted">Monte Soluções.</span>
         </div>
         </div>
 
     </footer>
+    <!--#endregion-->
 
 
 

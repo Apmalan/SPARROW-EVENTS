@@ -11,125 +11,103 @@
     <link rel="stylesheet" href="assets/css/sparrow-events.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400&display=swap" rel="stylesheet">
 
-    <title>Sparrow-events - cadastr-se</title>
+    <title>Sparrow-events - cadastra-se</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-roxo">
-        <a class="navbar-brand" href="index.html">Sparrow events</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<body class="bg-secondary">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Cadastre-se</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Eventos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Acontecendo</a>
-                        <a class="dropdown-item" href="#">Previstos</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Encerrados</a>
+
+    <section class="py-5">
+        <!-- Py-5 Peeding top e button ao mesmo tempo -->
+        <div class="container">
+            <div class="row">
+                <!--#region Coluna 01-->
+                <div class="col-sm-4 bg-roxo text-white text-center py-5">
+                    <div class="card-body">
+                        <!-- Usado para elementos dentro da div-->
+                        <img src="http://ansonika.com/mavia/img/registration_bg.svg" style="">
+                        <h2 class="py-3">Cadastre-se</h2>
+                        <p>Faça parte do clube de eventos Sparrow e ganhe descontos exclusivos!</p>
+
+
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <div class="container">
+                </div>
+                <!--#endregion-->
 
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>Seja bem, vindo!</h1>
-                <p>Realize seu cadastro</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-11">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <img src="assets/img/pessoa-icon-png-4.png">
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="form-group row">
-                                <label for="nome" class="col-sm-3 col-form-label">Nome</label>
-
-                                <input type="text" class="form-control" id="nome">
-
-                            </div>
-                            <div class="form-group row">
-                                <label for="dataNascimento" class="col-sm-3 col-form-label">Data Nascimento</label>
-
-                                <input type="date" class="form-control" id="dataNascimento">
-
-                            </div>
-                            <div class="form-group row">
-                                <label class="col-sm-1">Sexo</label>
-
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio1" name="customRadio"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio1">Feminino</label>
-                                </div>
-                                <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio"
-                                        class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Masculino</label>
-                                </div>
-
-                            </div>
-                            <div class="form-group row">
-                                <label for="selectFormacao" class="col-sm-3 col-form-label">Formação</label>
-
-                                <select class="form-control" id="selectFormacao">
-                                    <option>Ensino Fundamental</option>
-                                    <option>Ensino Médio</option>
-                                    <option>Ensino Superior</option>
-                                </select>
-
-                                <label for="selectProfissao" class="col-sm-1 col-form-label">Profissao</label>
-                                 <select class="form-control" id="selectProfissao">
-                                    <option>Analista de Sistemas</option>
-                                    <option>Dev. Frontend</option>
-                                    <option>Dev. Backend</option>
-                                    <option>Dev. FullStack</option>
-                                </select>
-
+                <!--#region Coluna 02-->
+                <div class="col-sm-8 py-5 border bg-white">
+                    <h4>Cadastra-se</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputText">Nome completo</label>
+                                <input type="text" class="form-control">
                             </div>
 
-                            <div class="form-group row">
-                                <label for="cpf" class="col-sm-3 col-form-label">CPF</label>
-
-                                <input type="text" class="form-control" id="cpf">
-
+                            <div class="form-group col-sm-6">
+                                <label for="inputEmail">E-mail</label>
+                                <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                          <span class="input-group-text" id="basic-addon1">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                      </div>
                             </div>
                         </div>
-                    </div>
-                </fieldset>
-            </div>
-        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-6">
+                                <label for="inputTelefone">Telefone</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="radioMasculino">Sexo</label>
+                                <div class="col-sm-12">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="radioMasculino" name="radioSexo"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="radioMasculino">Masculino</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="radioFeminino" name="radioSexo"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="radioFeminino">Feminino</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <label>Nos diga que tipos de eventos você gosta mais!</label>
+                                <textarea rows="4" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                        <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Concordo com os termos</label>
+                                              </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                    <div class="form-group col-sm-12">
+                                            <button class="btn btn-primary" type="submit">Enviar</button>
+                                    </div>
+                                </div>
 
-        <!--FIM DO CONTAINER-->
-    </div>
+                    </form>
+                   
+                </div>
+                
+                                </div>
+            </div>
+            <!--#endregion-->
+        </div>
+        </div>
+    </section>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
