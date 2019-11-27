@@ -1,0 +1,23 @@
+{
+  "name": "sparrow-events",
+  "version": "1.0.0",
+  "description": "Sistema de eventos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apmalan/SPARROW-EVENTS.git"
+  },
+  "author": "Alan Monte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Apmalan/SPARROW-EVENTS/issues"
+  },
+  "homepage": "https://github.com/Apmalan/SPARROW-EVENTS#readme",
+  "dependencies": {
+    "jquery-mask-plugin": "^1.14.16",
+    "toastr": "^2.1.4"
+  }
+}
