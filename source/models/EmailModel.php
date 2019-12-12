@@ -74,7 +74,7 @@ class EmailModel{
         
             //Recipients
             $mail->setFrom('senaiprogramadorweb2019@gmail.com', 'Contato - Sparrow');                           // De
-            $mail->addAddress('welton@faceli.edu.br', 'Welton Castoldi');           // Para
+            $mail->addAddress('apmalan@gmail.com', 'Alan Monte');           // Para
             //$mail->addAddress('ellen@example.com');                               // Você adicionar vários paras e se nao tiver nome, passe apenas o email
             $mail->addReplyTo('senaiprogramadorweb2019@gmail.com', 'Sparrow');      // Responder para
             $mail->addCC($remetente, $nome);                                        // Com copia

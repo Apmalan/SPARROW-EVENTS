@@ -33,7 +33,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <input value="Maria Joaquina" name="nome" type="text" class="form-control" id="nome" required>
+                                        <input  name="nome" type="text" class="form-control" id="nome" required>
                                     </div>
                                 </div>
                             </div>
@@ -41,13 +41,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input name="email" value="weltoncastoldi1@gmail.com" type="email" class="form-control" id="email" required>
+                                        <input name="email"  type="email" class="form-control" id="email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="telefone">Telefone celular</label>
-                                        <input name="telefone" value="27999771198" type="text" class="form-control celular_ddd"
+                                        <input name="telefone"  type="text" class="form-control celular_ddd"
                                             id="telefone" required>
                                     </div>
                                 </div>
@@ -56,7 +56,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="assunto">Assunto</label>
-                                        <input value="assunto de teste" name="assunto" type="text" class="form-control" id="assunto" required>
+                                        <input  name="assunto" type="text" class="form-control" id="assunto" required>
                                     </div>
                                 </div>
                             </div>
