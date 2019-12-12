@@ -1,0 +1,27 @@
+{
+    "name": "senai/sparrow",
+    "description": "Site de inscricao de eventos",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Alan Monte",
+            "email": "53954290+Apmalan@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config":{
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "source\\": "source/"
+        },
+        "files": [
+            "source/config.php"
+        ]
+    },
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+    
+}

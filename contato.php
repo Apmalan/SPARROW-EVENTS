@@ -1,14 +1,18 @@
+<?php
+    require_once realpath(dirname(__FILE__).'/source/models/EmailModel.php');
+?>
+
 <!doctype html>
 <html lang="pt-br" class="h-100">
-    <head>
-        <?php require_once 'shared/head.php'?>
-        <title>Sparrow-events - home</title>
 
-        
-    </head>
+<head>
+    <?php require_once 'shared/head.php' ?>
+    <title>Sparrow-events - Contato</title>
+</head>
 
 <body class="d-flex flex-column h-100">
-<?php require_once 'shared/nav.php'?>
+    <?php require_once 'shared/nav.php' ?>
+
     <div class="row">
         <div class="container-fluid">
             <iframe style="width: 100%; border:0;"
@@ -16,9 +20,11 @@
                 height="234" frameborder="0" allowfullscreen=""></iframe>
         </div>
     </div>
+
     <main role="main" class="flex-shrink-0 mb-5">
         <div class="container">
-            <form class="needs-validation" novalidate>
+            <form id="formContato" method="POST" class="needs-validation" novalidate>
+                <input type="hidden" name="formContato" value="contato">                
                 <div class="row">
                     <div class="col-sm-12">
                         <fieldset>
@@ -27,7 +33,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="nome">Nome</label>
-                                        <input name="nome" type="text" class="form-control" id="nome" required>
+                                        <input value="Maria Joaquina" name="nome" type="text" class="form-control" id="nome" required>
                                     </div>
                                 </div>
                             </div>
@@ -35,13 +41,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="email">Email</label>
-                                        <input name="email" type="email" class="form-control" id="email" required>
+                                        <input name="email" value="weltoncastoldi1@gmail.com" type="email" class="form-control" id="email" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="telefone">Telefone celular</label>
-                                        <input name="telefone" type="text" class="form-control celular_ddd"
+                                        <input name="telefone" value="27999771198" type="text" class="form-control celular_ddd"
                                             id="telefone" required>
                                     </div>
                                 </div>
@@ -50,7 +56,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="assunto">Assunto</label>
-                                        <input name="assunto" type="text" class="form-control" id="assunto" required>
+                                        <input value="assunto de teste" name="assunto" type="text" class="form-control" id="assunto" required>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +71,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <button type="submit" class="btn btn-success">Enviar mensagem</button>
+                                    <button id="btnEnviar" type="submit" class="btn btn-success">Enviar mensagem</button>
                                     <button type="reset" class="btn btn-link">Limpar formulário</button>
                                 </div>
                             </div>
@@ -75,10 +81,10 @@
             </form>
         </div>
     </main>
-    <?php require_once 'shared/footer.php'?>
-    <?php require_once 'shared/scripts.php'?>
-    
-    
+
+    <?php require_once 'shared/footer.php' ?>
+    <?php require_once 'shared/scripts.php' ?>
+    <script src="assets/js/services/contatoService.js"></script>
 </body>
 
 </html>
